@@ -56,7 +56,6 @@ function PasswordGenerator() {
         "http://localhost:3000/generate-password",
         { length, numbers, symbols, uppercase, lowercase }
       );
-      console.log(response, "res");
       setPassword(response.data);
     } catch (error) {
       console.log(error);
